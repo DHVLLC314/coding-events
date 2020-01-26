@@ -13,6 +13,8 @@
             <th>ID</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Contact Email</th>
+            <th>Category</th>
         </tr>
     </thead>
 
@@ -20,11 +22,14 @@
         <td th:text="${event.id}"></td>
         <td th:text="${event.name}"></td>
         <td th:text="${event.description}"></td>
+        <td th:text="${event.contactEmail}"></td>
+        <td th:text="${event.eventCategory.name}"></td>
     </tr>
 
-    <td th:unless="${events} and ${events.size()}">No events!</td>
-    <td th:unless="${events} and ${events.size()}"></td>
-    <td th:unless="${events} and ${events.size()}"></td>
+<!--    <td th:unless="${events} and ${events.size()}">No events!</td>-->
+<!--    <td th:unless="${events} and ${events.size()}"></td>-->
+<!--    <td th:unless="${events} and ${events.size()}"></td>-->
+<!--    <td th:unless="${events} and ${events.size()}"></td>-->
 </table>
 
 
